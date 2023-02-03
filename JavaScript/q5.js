@@ -3,15 +3,17 @@ class SortArray{
 
     constructor(inputArray){
         //private properties
-        this.originalArray=inputArray
+        let originalArray=inputArray;
+        
         //private methods.
         //comparatorFunction to sort the number array or string array.
         const comparatorFunction=(a,b)=> a>b?1:-1
         //used sort method of javascript.
-        this.sortArray=() => inputArray.sort(comparatorFunction)
+        const sortArray=() => inputArray.sort(comparatorFunction)
+        this.getSortedArray=()=> sortArray()
     }
     //public function can be accessed user can call it.
-    getSortedArray=()=>this.sortArray()
+    // getSortedArray=()=> this.sortArray()
 
 }
 
@@ -25,13 +27,12 @@ class SortObjectArray extends SortArray {
             return (a,b)=> a[property]>b[property]?1:-1
          }
        
-        this.sortObjectArray=(property)=> inputObjectArray.sort(sortByProperty(property))
-       
+         const sortObjectArray=(property)=> inputObjectArray.sort(sortByProperty(property))
+         //passing the property of object according to which we want to sort the object array.
+         this.getSortedObjectArray=(property)=> sortObjectArray(property)
 
     }
 
-    //passing the property of object according to which we want to sort the object array.
-    getSortedObjectArray=(property)=>this.sortObjectArray(property)
 }
 
 //number array
@@ -43,6 +44,7 @@ console.log(obj.getSortedArray())
 const string=['b','c','a']
 const stringObj=new SortArray(string)
 console.log(stringObj.getSortedArray())
+console.log(stringObj.sortArray())
 
 const objectArray=[ 
     { 
