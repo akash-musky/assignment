@@ -44,7 +44,7 @@ console.log(obj.getSortedArray())
 const string=['b','c','a']
 const stringObj=new SortArray(string)
 console.log(stringObj.getSortedArray())
-console.log(stringObj.sortArray())
+// console.log(stringObj.sortArray())
 
 const objectArray=[ 
     { 
