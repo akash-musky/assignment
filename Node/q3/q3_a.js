@@ -1,16 +1,23 @@
-const fs = require('fs');
+const request = require('request');
+const fs=require('fs')
 const https = require('https');
+https.get('https://www.google.com', (resp)=>{
+
+  let data = '';
+  // A chunk of data has been received.
+  resp.on('data', (chunk) => {
+    data += chunk;
+  });
+  // The whole response has been received. Print out the result.
+  resp.on('end', () => {
+        fs.writeFileSync('./google.html', data,'utf-8',(err)=>{
+         if(err) return err;
+         fs.close();
+        }) 
+  });
   
-// URL of the image
-const url = 'GFG.jpeg';
-  
-https.get(url,(res) => {
-    // Image will be stored at this path
-    const path = `${__dirname}/files/img.jpeg`; 
-    const filePath = fs.createWriteStream(path);
-    res.pipe(filePath);
-    filePath.on('finish',() => {
-        filePath.close();
-        console.log('Download Completed'); 
-    })
-})
+}).on("error", (err) => {
+    console.log("Error: " + err.message);
+});
+
+
