@@ -1,0 +1,24 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Node Js Assignment Solution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akash Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "handlebars": "^4.7.7",
+    "http": "^0.0.1-security",
+    "https": "^1.0.0",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2",
+    "router": "^1.3.7",
+    "xml-js": "^1.6.11",
+    "xml-json": "^2.0.2",
+    "xml-parser": "^1.2.1"
+  }
+}

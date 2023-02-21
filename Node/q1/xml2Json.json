@@ -1,0 +1,57 @@
+{
+    "_declaration": {
+        "_attributes": {
+            "version": "1.0",
+            "encoding": "utf-8"
+        }
+    },
+    "products": {
+        "product": {
+            "baseId": {},
+            "isActive": {},
+            "contentType": {
+                "contentTypeValue": {}
+            },
+            "features": {
+                "feature": {}
+            },
+            "searchTerms": {
+                "searchTermValue": {}
+            },
+            "childProducts": {
+                "childProduct": [
+                    {
+                        "baseId": {},
+                        "isActive": {},
+                        "features": {
+                            "feature": {}
+                        },
+                        "searchTerms": {
+                            "searchTermValue": {}
+                        }
+                    },
+                    {
+                        "baseId": {},
+                        "isActive": {},
+                        "features": {
+                            "feature": {}
+                        },
+                        "searchTerms": {
+                            "searchTermValue": {}
+                        }
+                    },
+                    {
+                        "baseId": {},
+                        "isActive": {},
+                        "features": {
+                            "feature": {}
+                        },
+                        "searchTerms": {
+                            "searchTermValue": {}
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
