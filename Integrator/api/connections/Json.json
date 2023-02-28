@@ -1,0 +1,26 @@
+{
+  "create" : {
+        "type": "http",
+        "name": "Node Js Https Connection",
+        "sandbox": false,
+        "http": {
+            "formType": "http",
+            "mediaType": "json",
+            "baseURI": "https://655c537a-1308-4d1c-8914-e81d380ed0df.mock.pstmn.io",
+            "unencrypted": {
+                "field": "value"
+            },
+            "encrypted": "******",
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "test",
+                    "password": "test"
+                }
+            }
+        }
+    },
+    "update" : {
+
+    }
+}

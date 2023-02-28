@@ -1,0 +1,31 @@
+{
+   "create" : {
+     "name": "Node Js netsuite https exports",
+    "_connectionId": "63ec6b6e1b4006274a0743b0",
+    "apiIdentifier": "ebcf86d8bd",
+    "asynchronous": true,
+    "pageSize": 100,
+    "netsuite": {
+        "type": "restlet",
+        "skipGrouping": true,
+        "statsOnly": false,
+        "restlet": {
+            "recordType": "customer",
+            "searchId": "251043",
+            "criteria": [],
+            "columns": [],
+            "useSS2Restlets": false,
+            "markExportedBatchSize": 100
+        },
+        "distributed": {
+            "executionContext": [],
+            "executionType": [],
+            "useSS2Framework": false
+        }
+    },
+    "adaptorType": "NetSuiteExport"
+    },
+    "update":{
+
+    }
+}

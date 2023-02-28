@@ -1,0 +1,65 @@
+{
+    "create":{
+        "name": "Node Js Https Import",
+        "_connectionId": "63f317eddf61043f508db2ed",
+        "apiIdentifier": "id825ae7f0",
+        "ignoreExisting": false,
+        "ignoreMissing": false,
+        "oneToMany": false,
+        "sandbox": false,
+        "mapping": {
+            "fields": [
+                {
+                    "extract": "recordType",
+                    "generate": "recordType"
+                },
+                {
+                    "extract": "id",
+                    "generate": "id"
+                },
+                {
+                    "extract": "Name",
+                    "generate": "Name"
+                },
+                {
+                    "extract": "Email",
+                    "generate": "email"
+                },
+                {
+                    "extract": "Phone",
+                    "generate": "phone"
+                },
+                {
+                    "extract": "dataURI",
+                    "generate": "dataURI"
+                }
+            ]
+        },
+        "http": {
+            "relativeURI": [
+                "/post",
+                "/post"
+            ],
+            "method": [
+                "POST",
+                "POST"
+            ],
+            "body": [
+                "",
+                ""
+            ],
+            "batchSize": 1,
+            "requestType": [
+                "UPDATE",
+                "CREATE"
+            ],
+            "sendPostMappedData": true,
+            "existingExtract": "id",
+            "formType": "http"
+        },
+        "adaptorType": "HTTPImport"
+    },
+    "update":{
+
+    }
+}

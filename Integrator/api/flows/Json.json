@@ -1,0 +1,27 @@
+{
+    "create": {
+        "name": "node Js https-netsuite flow",
+        "disabled": false,
+    "pageProcessors": [
+        {
+            "responseMapping": {
+                "fields": [],
+                "lists": []
+            },
+            "type": "import",
+            "_importId": "63f318900ab6d870dbef650c"
+        }
+    ],
+    "pageGenerators": [
+        {
+            "_exportId": "63f318347e8da9693d12b543",
+            "skipRetries": false
+        }
+    ],
+   
+    "autoResolveMatchingTraceKeys": true 
+    },
+    "update": {
+
+    }
+}
